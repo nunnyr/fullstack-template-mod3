@@ -1,8 +1,31 @@
 {
-  "resources": [
+  "shopping": [
     {
       "id": 1,
-      "example": "resource"
+      "item": "Dress",
+      "color": "red",
+      "count": 1
+    },
+    {
+      "id": 2,
+      "item": "Pant",
+      "color": "black",
+      "count": 1
+
+    },
+    {
+      "id": 3,
+      "item": "Top",
+      "color": "blue",
+      "count": 1
+    },
+    {
+      "id": 4,
+      "item": "Sweater",
+      "color": "gray",
+      "count": 1
     }
   ]
 }
+
+

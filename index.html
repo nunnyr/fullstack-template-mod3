@@ -2,19 +2,27 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Template</title>
-    <script src="index.js" type="text/javascript"></script>
+    <title>Shopping Cart</title>
+    <script defer src="index.js" type="text/javascript"></script>
     <link rel="stylesheet" href="index.css">
   </head>
 
   <body>
+    <main>
+    <h1>Shopping Cart</h1>
+    <form id="new-item" class="form-input">
+      <input type="text" name="item_name" placeholder="Add item" autocomplete="off"/>
+      <button id="new-item-submit" type="submit" class="submit button">Add to cart</button>
+    </form>
+      
+      <ol id="shopping-cart" class="shopping checkout">
+        <!-- this is where we will add our items -->
+      </ol>
+      
+      <div id="main-div">
 
-    <h1>Template</h1>
-    <!-- Feel free to alter the HTML so that it contains just the skeleton of your application -->
-    <div id="main-div">
-
-    </div>
-
-
+      </div>
+    
+  </main>
   </body>
 </html>
