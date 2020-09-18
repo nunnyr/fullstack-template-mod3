@@ -29,3 +29,30 @@ let turnItemToLI = (shopping) => {
     itemOL.append(itemLi)
    
 }
+
+//create an event listener for submitting an item
+//we want to send a post request to our server to create an item
+
+itemForm.addEventListener("submit", (evt) => {
+    evt.preventDefault()
+    let nameOfItem = evt.target.item_name.value
+
+    fetch("http://localhost:3000/shopping", {
+        method: 'POST', 
+        headers: {
+        'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            item: nameOfItem,
+            count: 1
+        })
+    })
+
+        .then(res => res.json())
+        .then((createShoppingObj) => {
+            turnItemToLI(createShoppingObj);
+            evt.target.reset()
+
+        })
+
+})

@@ -3,29 +3,32 @@
     {
       "id": 1,
       "item": "Dress",
-      "color": "red",
       "count": 1
     },
     {
       "id": 2,
       "item": "Pant",
-      "color": "black",
       "count": 1
-
     },
     {
       "id": 3,
       "item": "Top",
-      "color": "blue",
       "count": 1
     },
     {
       "id": 4,
       "item": "Sweater",
-      "color": "gray",
       "count": 1
+    },
+    {
+      "item": "Hat",
+      "count": 1,
+      "id": 5
+    },
+    {
+      "item": "Ball gown",
+      "count": 1,
+      "id": 6
     }
   ]
 }
-
-
